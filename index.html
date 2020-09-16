@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Visualizer</title>
+    <!-- GOOGLE FONTS   -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!--  FONTAWESOME  -->
+    <script src="https://kit.fontawesome.com/7d591f1481.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="row w-100 m-0 bg-light containerNav d-flex align-items-center py-2">
+        <div class="col-2 d-flex justify-content-center p-3">
+            <label for="" class="mb-0">Number of elements:</label>
+        </div>
+        <div class="col-1 m-0 ">
+            <input type="number" class="form-control m-0 " placeholder="2-25" id="elementNumber">
+        </div>
+        <div class="col-1">
+            <button type="button" class="btn btn-sm btn-info px-4" id="addElements">Add</button>
+        </div>
+        <div class="col-2">
+            <select class="custom-select mr-sm-2" id="selectedAlgo">
+                <option selected value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="quick">Quick Sort</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <label for="">Speed</label>
+            <input type="range" min="1" max="11.5" step="0.5" value="6" class="custom-range" id="speedRange">
+        </div>
+    </div>
+    <br>
+    <div class="row w-100 justify-content-between">
+        <div class="col-2 legendsCard p-3 ml-5 invisible" id="legendsCard">
+            LEGEND:
+            <ul class="legendP" id="legendP">
+                <!--
+                <li style="color: #ff7f7f;">Current </li>
+                <li style="color: #ffff7f;">Compare / Swap </li>
+-->
+            </ul>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="row w-100 m-0" id="numRow">
+        <div class="col-12 bg-primary d-flex justify-content-center p-1 position-relative" id="numColumn">
+
+
+        </div>
+    </div>
+
+    <div class="row w-100 m-0">
+        <div class="col-12d-flex justify-contents-center m-auto">
+            <button type="button" class="btn btn-info btn-sm px-4 mt-5 invisible" id="btnSort">Sort</button>
+        </div>
+    </div>
+
+    <div class="row w-100 m-0">
+        <div class="col-12d-flex m-auto">
+            <button type="button" class="btn btn-danger btn-sm px-3 btnReset position-relative invisible" id="btnReset">Reset</button>
+        </div>
+    </div>
+
+    <div class="row w-100 m-0">
+        <div class="col-12d-flex m-auto">
+            <button type="button" class="btn btn-danger btn-sm px-3 btnReset position-relative invisible" id="btnNew">Add New</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body></html>
